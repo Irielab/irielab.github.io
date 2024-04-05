@@ -1,0 +1,340 @@
+* {
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+
+
+
+body {
+	font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+	font-size: 16px;
+	line-height: 1.5;
+	color: #1f1f1f; /* 黒 */
+	background-color: #fff; /* 白 */
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+a {
+	color: #1f1f1f; /* 黒 */
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #a19f9f;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	height: 70px;
+	background-color: #fff; /* 白 */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4px;
+	margin:4px ;
+}
+
+/* logo */
+.logo {
+	display: inline-block;
+	margin-right: 0%;
+	padding: 0px;
+	vertical-align: top;
+	padding-top: 20px;
+}
+
+/* タブ (HOME, NEWS, ...) */
+nav ul {
+	display: flex;
+	align-items: center;
+	margin-left: 1%;
+	padding: 10px;
+	padding-top: 30px;
+}
+
+nav li {
+	margin-left: 1%;
+	padding: 10px;
+	padding-top: 30px;
+}
+
+nav li:first-child {
+	margin-left: 0;
+}
+
+/* ホーム画像 irie_lab_front.jpg */
+#hero {
+	padding-top: 40px;
+}
+
+.hero-image {
+	position: relative;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.hero-image h1 {	
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	text-align: left;
+	z-index: 1;
+	font-size: 45px;
+	font-weight: bold;
+	color: #fff;
+}	
+.hero-image h2 {	
+	position: absolute;
+	top: 85%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	text-align: left;
+	z-index: 1;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+}	
+.slider{
+	object-fit: cover;
+}
+
+
+
+
+/* 研究内容 */
+#research {
+	padding: 80px 0;
+	text-align: center;
+}
+
+/* 研究内容:スローガン */
+#research h2 {
+	font-size: 35px;
+	font-weight: bold;
+	margin: 5px;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+#research h1 {
+	font-size: 40px;
+	font-weight: bold;
+	margin: 5px;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+#research h4 {
+	font-size: 20px;
+	margin: 50px;
+	margin-bottom: 160px;
+}
+
+
+
+/* P,R,Lのイメージ画像 */
+.feature {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+	width: 30%;
+}
+
+.feature img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	margin-bottom: 0px;
+}
+
+.feature h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+
+/* ニュース */
+.news-list{
+  list-style: none outside;
+  margin: 10px;
+  padding: 0px;
+}
+.news-list h2 {
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.news-list .item a{
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333; /* 黒 */
+  border-bottom: 1px solid #333; /* 黒 */
+  padding: 10px 10px;
+}
+.news-list .item:first-child a{
+  border-top: 1px solid #333; /* 黒 */
+}
+.news-list .item .date{
+  margin: 0;
+  min-width: 100px;
+  font-size: 15px;
+  color: #999;
+  padding: 0 15px 0 0;
+}
+.news-list .item .category{
+  margin: 0;
+  min-width: 100px;
+  padding: 0 15px 0 0;
+}
+.news-list .item .category span{
+  background: #333333;  /* 黒 */;
+  color: #fff; /* 白 */;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 13px;
+  line-height: 1;
+}
+.news-list .item .title{
+  margin: 0;
+  width: 100%;
+  color: #AAAAAA; /* グレー */
+}
+.news-list .item a:hover .title{
+  color:  #1f1f1f; /* 黒 */;
+}
+
+@media screen and (max-width: 767px){
+.news-list .item a{
+  flex-wrap: wrap;
+}
+.news-list .item .date{
+  min-width: 100px;
+}
+.news-list .item .title{
+  margin-top: 10px;
+}
+}
+
+
+/* アクセス */
+#access {
+	padding: 80px 0;
+	text-align: center;
+}
+
+#access h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#access p {
+	font-weight: lighter;
+	font-size: 15px;
+}
+
+iframe {
+	width: 70%;
+	aspect-ratio: 16/9;
+	margin: 10px;
+  }
+
+  
+
+/* フッター */
+
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #948f8f;
+  }
+
+.footer {
+	padding: 2rem;
+	font-size: 15px;
+	color: #bbc6d7;
+	background: rgb(255, 255, 255);
+	text-align: center;
+}
+
+
+  
+.flex {
+	display: flex;
+}
+  
+
+  
+.footer__navi {
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+}
+  
+.footer__navi li {
+	display: inline-block;
+}
+  
+.footer__navi li:not(:last-child) {
+	margin-right: 16px;
+}
+  
+.footer__logo {
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+  
+
+
+
+  
+@media (min-width: 768px) {
+	.md-flex {
+	  display: flex;
+	}
+  
+	.md-justify-between {
+	  justify-content: space-between;
+	}
+  
+	.copyright {
+	  text-align: center;
+	  font-weight: lighter;
+	}
+}
+
+
+/* メンバー */
+#member {
+	padding: 40px 0;
+}
+
+/* ホーム画面=>動かない背景 */
+.parallax {
+	box-sizing: border-box;
+  	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	background-image: url('images/home4.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
