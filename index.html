@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUS 情報工学科 入江研究室</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- 画像自動スクロール -->	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 10000,
+            });
+        });
+    </script>
+
+
+	
+</head>
+<body>
+<div id="page">
+	<header>
+		<div class="logo">
+			<img src="images/logo2.jpg" alt="特徴画像" style="width:80%;">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="./index.html">HOME</a></li>
+				<li><a href="#news">NEWS</a></li>
+				<li><a href="#research">RESEARCH</a></li>
+				<li><a href="./member.html">MEMBER</a></li>
+				<li><a href="./publications.html">PUBLICATIONS</a></li>
+				<li><a href="./contact.html">CONTACTS　</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="hero">
+        <div class="slider">
+            <img src="images/home5.jpg" width="500" height="350">
+            <img src="images/lab-image.jpg" width="500" height="350">
+            <img src="images/pic1.jpg" width="500" height="350">
+        </div>
+	</section>
+
+	<!-- 新着情報 -->	
+	<section class="news-list" id="news">
+		<h2>Imformation</h2>
+    		<li class="item">
+        		<a href="./publications.html">
+            			<p class="date">2020/4/15</p>
+            			<p class="category"><span>NEWS</span></p>
+	    			<p class="title">画像の認識・理解シンポジウム（MIRU2023）で発表しました。</p>
+        		</a>
+	    	</li>
+	    	<li class="item">
+		        <a href="./publications.html">
+		            	<p class="date">2020/4/15</p>
+		            	<p class="category"><span>NEWS</span></p>
+		            	<p class="title">画像センシングシンポジウム（SSII2023）で発表しました。</p>
+		        </a>
+	    	</li>
+
+	</section>
+
+
+
+    <!-- 研究内容 -->
+	<section id="research">
+		<div class="parallax">
+			<h2>RESEARCH</h2>
+		</div>
+
+		<h2>あらゆる実世界の様子（モノ・コト・カタチ）を自在に認識・理解可能にする技術を研究します</h2>
+		<h4>AIも人間と同様、何をするにもまず外界を認識・理解する必要があります。入江研究室では、より賢く・役に立つAIの実現に向け、AIの認識・理解能力を拡張・高度化する新たな問題の探求と実践的な新技術・新応用の創出に取り組んでいます。</h4>
+		
+
+		<h1>Research Interests</h1>
+		<div class="feature">
+			<img src="images/p-img.jpg" alt="特徴画像" style="width:100%;">
+			<h3>Perception</h3>
+			<p>センシング・マルチモダリティ</p>
+		</div>
+		<div class="feature">
+			<img src="images/r-img.jpg" alt="特徴画像" style="width:100%;">
+			<h3>Recognition</h3>
+			<p>認識・適応・理解</p>
+		</div>
+		<div class="feature">
+			<img src="images/l-img.jpg" alt="特徴画像" style="width:100%;">
+			<h3>Learning</h3>
+			<p>学習・忘却・学習制御</p>
+		</div>
+	</section>
+
+	<section id="access">
+		<h2>Access</h2>
+        
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.1462372494157!2d139.86124221526126!3d35.77178398017339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018857ad443098d%3A0xf79b3de52fef127b!2z5p2x5Lqs55CG56eR5aSn5a2mIOiRm-mjvuOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1689319300360!5m2!1sja!2sjp"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <p>〒125-8585 東京都葛飾区新宿 6-3-1 東京理科大学 管理棟4階工学部情報工学科 入江研究室</p>
+	</section>
+
+
+    <footer class="footer">
+        <div class="md-flex md-justify-between">
+          <a href="https://jajaaan.co.jp/" class="footer__logo">
+            <img src="images/rikadai.jpg" width="100%" alt="Lo" />
+          </a>
+          <ul class="footer__navi flex">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#research">RESEARCH</a></li>
+            <li><a href="./member.html">MEMBER</a></li>
+            <li><a href="./event.html">EVENTS</a></li>
+            <li><a href="./contact.html">CONTACTS　</a></li>
+          </ul>
+        </div>
+        <hr />
+        <p class="copyright">
+            Copyright © 2023 Irie Lab. All Rights Reserved.
+        </p>
+      </footer>
+	
+</div>
+</body>
+</html>
