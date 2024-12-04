@@ -5,6 +5,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+	<script src="script.js"></script>
 
 	
 </head>
@@ -12,16 +16,18 @@
 <div id="page">
 	<header>
 		<div class="logo">
-			<img src="images/logo.jpg" alt="特徴画像" style="width:80%;">
+			<a href="./index.html">
+				<img src="images/logo.jpg" alt="特徴画像" style="width:60%;">
+			</a>
 		</div>
 		<nav>
-			<ul>
+			<ul id="page-link">
 				<li><a href="./index.html">HOME</a></li>
-				<li><a href="./index.html#news">NEWS</a></li>
-				<li><a href="./index.html#research">RESEARCH</a></li>
-				<li><a href="./member.html">MEMBER</a></li>
+				<li><a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">BLOG</a></li>
+				<li><a href="./research.html">RESEARCH</a></li>
+				<li><a href="#page">MEMBER</a></li>
 				<li><a href="./publications.html">PUBLICATIONS</a></li>
-				<li><a href="./contact.html">CONTACTS　</a></li>
+				<li><a href="./access.html">ACCESS</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -29,67 +35,87 @@
 	<div id="member">
         <article>
         <h2>メンバー</h2>
-		<h3>2023年度</h3>
-		<h4>教員</h4>
+		<h3>2024年度</h3>
+		<h4>　教授</h4>
 		<div id="list">
 			<ul>
-				<li>准教授（Associate Professor） <a href="https://aoki-medialab.jp/aokiyoshimitsu/" target="_blank" rel="noopener noreferrer">入江　豪</a></li>
+				<li>入江　豪　准教授</a></li>
 			</ul>
 		</div>
-
-		<h4>学生</h4>
-		<h5>修士課程（Master students）- 7名</h5>
+		<h4>　助教</h4>
+		<div id="list">
+			<ul>
+				<li>Zekun Yang　助教</a></li>
+			</ul>
+		</div>
+		<h4>　学生</h4>
+		<h5>修士課程 - 11名</h5>
 		<div id="list">
 			<ul>
 				<li>
-					M1　国方　慶悟
+					M2　森　太紀
 				</li>
 				<li>
-					M1　小玉　星弥
+					M2　国方　慶悟
 				</li>
 				<li>
-					M1　後藤　優太 
+					M2　小玉　星弥
 				</li>
 				<li>
-					M1　本間　純平
+					M2　後藤　優太 
 				</li>
 				<li>
-					M1　山上　駿也
+					M2　本間　純平
 				</li>
 				<li>
-					M1　米澤　祥吾
+					M2　山上　駿也
 				</li>
 				<li>
-					M1　森　太紀
+					M2　米澤　祥吾
+				</li>
+				<li>
+					M1　石崎　亮太
+				</li>
+				<li>
+					M1　大塚　翔也
+				</li>
+				<li>
+					M1　桑名　優輔
+				</li>
+				<li>
+					M1　中村　彰公
 				</li>
 			</ul>
 		</div>
-		<h5>学部（Bachelor students）- 8名</h5>
+		<h5>学部 - 9名</h5>
 		<div id="list">
 			<ul>
 				<li>
-					B4　石﨑　亮太
+					B4　川村　輝大
 				</li>
 				<li>
-					B4　大塚　翔也
+					B4　池田　悠真
 				</li>
 				<li>
-					B4　木村　駿太
+					B4　石原　俊平
 				</li>
 				<li>
-					B4　桑名　優輔
+					B4　伊藤　誠治
 				</li>
 				<li>
-					B4　琴寄　有貴
+					B4　小代　優翔
 				</li>
 				<li>
-					B4　櫻井　映騎
+					B4　上市　祐弥
 				</li>
 				<li>
-					B4　宗　遼河
+					B4　渋谷　優貴
 				</li>
 				<li>
-					B4　宮下　湧輔
+					B4　角田　弘斗
+				</li>
+				<li>
+					B4　森脇　悠太
 				</li>
 			</ul>
 		</div>
@@ -102,17 +128,19 @@
 
     <footer class="footer">
         <div class="md-flex md-justify-between">
-          <a href="https://jajaaan.co.jp/" class="footer__logo">
-            <img src="images/rikadai.jpg" width="100%" alt="Lo" />
-          </a>
-          <ul class="footer__navi flex">
+			<div class="footer__logo">
+				<img src="images/rikadai.jpg" width="100%" alt="Lo" />
+			</div>
+		  <nav>
+          <ul class="footer__navi flex" id="page-link">
             <li><a href="./index.html">HOME</a></li>
-            <li><a href="#news">NEWS</a></li>
-            <li><a href="#research">RESEARCH</a></li>
-            <li><a href="./member.html">MEMBER</a></li>
-            <li><a href="./event.html">EVENTS</a></li>
-            <li><a href="./contact.html">CONTACTS　</a></li>
+            <li><a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">BLOG</a></li>
+            <li><a href="./research.html">RESEARCH</a></li>
+            <li><a href="#page">MEMBER</a></li>
+            <li><a href="./publications.html">PUBLICATIONS</a></li>
+            <li><a href="./access.html">ACCESS</a></li>
           </ul>
+		</nav>
         </div>
         <hr />
         <p class="copyright">

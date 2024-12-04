@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TUS 情報工学科 入江研究室</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+	<script src="script.js"></script>
+
+	
+</head>
+<body>
+<div id="page">
+	<header>
+		<div class="logo">
+			<a href="./index.html">
+				<img src="images/logo.jpg" alt="特徴画像" style="width:60%;">
+			</a>
+		</div>
+		<nav>
+			<ul id="page-link">
+				<li><a href="./index.html">HOME</a></li>
+				<li><a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">BLOG</a></li>
+				<li><a href="#page">RESEARCH</a></li>
+				<li><a href="./member.html">MEMBER</a></li>
+				<li><a href="./publications.html">PUBLICATIONS</a></li>
+				<li><a href="./access.html">ACCESS</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+	 <!-- 研究内容 -->
+	 <section id="research" class="scroll_area">
+		<div class="parallax">
+			<h3 class="box fadeUpTrigger text-white">RESEARCH</h3>
+		</div>
+
+		<h2 class="box fadeUpTrigger fade_1">あらゆる実世界の様子（モノ・コト・カタチ）を自在に<br />認識・理解可能にする技術を研究します</h2>		
+		<p>
+			<span class="slide-in leftAnime">
+			<span class="slide-in_inner leftAnimeInner fade_2">AIも人間と同様、何をするにもまず外界を認識・理解する必要があります。<br />入江研究室では、より賢く・役に立つAIの実現に向け、AIの認識・理解能力を拡張・高度化する新たな問題の探求と実践的な新技術・新応用の創出に取り組んでいます。</span>
+			</span>
+		</p>
+
+		<h1 class="box fadeUpTrigger">Research Interests</h1>
+		<p class="box fadeUpTrigger detail">私たちは以下の3つのテーマに分かれて研究に取り組んでいます。</p>
+		<div class="feature">
+			<a href="./research.html" class="image_link">
+				<img src="images/p2.jpg" alt="特徴画像" style="width:35%;" class="box fadeUpTrigger">
+				<h3 class="box fadeUpTrigger">Perception</h3>
+				<p class="box fadeUpTrigger">センシング・マルチモダリティ</p>
+			</a>
+		</div>
+		<div class="feature">
+			<a href="./research.html" class="image_link">
+				<img src="images/r.jpg" alt="特徴画像" style="width:30%;" class="box fadeUpTrigger">
+				<h3 class="box fadeUpTrigger">Recognition</h3>
+				<p class="box fadeUpTrigger">認識・適応・理解</p>
+			</a>
+		</div>
+		<div class="feature">
+			<a href="./research.html" class="image_link">
+				<img src="images/l.jpg" alt="特徴画像" style="width:31%;" class="box fadeUpTrigger">
+				<h3 class="box fadeUpTrigger">Learning</h3>
+				<p class="box fadeUpTrigger">学習・忘却・学習制御</p>
+			</a>
+		</div>
+	</section>
+
+
+
+
+
+    <footer class="footer">
+		<p id="page-top"><a href="#"></a></p>
+        <div class="md-flex md-justify-between">
+			<div class="footer__logo">
+				<img src="images/rikadai.jpg" width="100%" alt="Lo" />
+			</div>
+		  <nav>
+			<ul class="footer__navi flex" id="page-link">
+				<li><a href="./index.html">HOME</a></li>
+				<li><a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">BLOG</a></li>
+				<li><a href="#page">RESEARCH</a></li>
+				<li><a href="./member.html">MEMBER</a></li>
+				<li><a href="./publications.html">PUBLICATIONS</a></li>
+				<li><a href="./access.html">ACCESS</a></li>
+			</ul>
+			</nav>
+        </div>
+        <hr />
+        <p class="copyright">
+            Copyright © 2023 Irie Lab. All Rights Reserved.
+        </p>
+    </footer>
+
+	<script>
+		//スクロール
+		$('#page-link a[href*="#"]').click(function () {
+			var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+			var pos = $(elmHash).offset().top;  //idの上部の距離を取得
+			$('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+			return false;
+		});
+		//先頭までスクロール
+		function PageTopAnime() {
+		var scroll = $(window).scrollTop();
+		if (scroll >= 400){//上から200pxスクロールしたら
+			$('#page-top').removeClass('DownMove');//#page-topについているDownMoveというクラス名を除く
+			$('#page-top').addClass('UpMove');//#page-topについているUpMoveというクラス名を付与
+		}else{
+			if($('#page-top').hasClass('UpMove')){//すでに#page-topにUpMoveというクラス名がついていたら
+			$('#page-top').removeClass('UpMove');//UpMoveというクラス名を除き
+			$('#page-top').addClass('DownMove');//DownMoveというクラス名を#page-topに付与
+			}
+		}
+		}
+		// 画面をスクロールをしたら動かしたい場合の記述
+		$(window).scroll(function () {
+		PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+		});
+		// ページが読み込まれたらすぐに動かしたい場合の記述
+		$(window).on('load', function () {
+		PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+		});
+		// #page-topをクリックした際の設定
+		$('#page-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0//ページトップまでスクロール
+			}, 500);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+			return false;//リンク自体の無効化
+		});
+	</script>
+
+
+	
+</div>
+</body>
+</html>

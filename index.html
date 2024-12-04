@@ -6,134 +6,177 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-    <!-- 画像自動スクロール -->	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-                auto: true,
-                pause: 10000,
-            });
-        });
-    </script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+	<script src="script.js"></script>
 
-
-	
 </head>
+
 <body>
 <div id="page">
+
+	<!-- ヘッダー -->	
 	<header>
 		<div class="logo">
-			<img src="images/logo.jpg" alt="特徴画像" style="width:80%;">
+			<a href="">
+				<img src="images/logo.jpg" alt="特徴画像" style="width:60%;">
+			</a>
 		</div>
 		<nav>
-			<ul>
-				<li><a href="./index.html">HOME</a></li>
-				<li><a href="#news">NEWS</a></li>
-				<li><a href="#research">RESEARCH</a></li>
+			<ul id="page-link">
+				<li><a href="" width="113">HOME</a></li>
+				<li><a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">BLOG</a></li>
+				<li><a href="./research.html">RESEARCH</a></li>
 				<li><a href="./member.html">MEMBER</a></li>
 				<li><a href="./publications.html">PUBLICATIONS</a></li>
-				<li><a href="./contact.html">CONTACTS　</a></li>
+				<li><a href="./access.html">ACCESS</a></li>
 			</ul>
 		</nav>
 	</header>
+	
 
+	<!-- 動く画像 -->	
 	<section id="hero">
-        <div class="slider">
-            <img src="images/home1.jpg" width="500" height="350">
-            <img src="images/home2.jpg" width="500" height="350">
-            <img src="images/home3.jpg" width="500" height="350">
+        <div id="slider">
         </div>
 	</section>
 
+	
+
 	<!-- 新着情報 -->	
 	<section class="news-list" id="news">
-		<h2>Imformation</h2>
-    		<li class="item">
-        		<a href="./publications.html">
-            			<p class="date">2020/4/15</p>
-            			<p class="category"><span>NEWS</span></p>
-	    			<p class="title">画像の認識・理解シンポジウム（MIRU2023）で発表しました。</p>
-        		</a>
-	    	</li>
-	    	<li class="item">
-		        <a href="./publications.html">
-		            	<p class="date">2020/4/15</p>
-		            	<p class="category"><span>NEWS</span></p>
-		            	<p class="title">画像センシングシンポジウム（SSII2023）で発表しました。</p>
-		        </a>
-	    	</li>
-
-	</section>
-
-
-
-    <!-- 研究内容 -->
-	<section id="research">
-		<div class="parallax">
-			<h2>RESEARCH</h2>
-		</div>
-
-		<h2>あらゆる実世界の様子（モノ・コト・カタチ）を自在に認識・理解可能にする技術を研究します</h2>
-		<h4>AIも人間と同様、何をするにもまず外界を認識・理解する必要があります。入江研究室では、より賢く・役に立つAIの実現に向け、AIの認識・理解能力を拡張・高度化する新たな問題の探求と実践的な新技術・新応用の創出に取り組んでいます。</h4>
-		
-
-		<h1>Research Interests</h1>
-		<div class="feature">
-			<img src="images/p.jpg" alt="特徴画像" style="width:30%;">
-			<h3>Perception</h3>
-			<p>センシング・マルチモダリティ</p>
-		</div>
-		<div class="feature">
-			<img src="images/r.jpg" alt="特徴画像" style="width:30%;">
-			<h3>Recognition</h3>
-			<p>認識・適応・理解</p>
-		</div>
-		<div class="feature">
-			<img src="images/l.jpg" alt="特徴画像" style="width:30%;">
-			<h3>Learning</h3>
-			<p>学習・忘却・学習制御</p>
+		<h2 id="imfo">IMFOMATION</h2>
+		<div class="news_scroll_area">
+			<li class="item">
+				<a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f210800986c1e4bbbe782902" target="_blank">
+						<p class="date">2020/4/15</p>
+						<p class="category">学会発表</p>
+					<p class="news_title">画像の認識・理解シンポジウム（MIRU2023）で発表しました。</p>
+				</a>
+			</li>
+			<li class="item">
+				<a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f210800986c1e4bbbe782902" target="_blank">
+						<p class="date">2020/4/15</p>
+						<p class="category"><span>学会発表</span></p>
+					<p class="news_title">画像の認識・理解シンポジウム（MIRU2023）で発表しました。</p>
+				</a>
+			</li>
+			<li class="item">
+				<a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f210800986c1e4bbbe782902" target="_blank">
+						<p class="date">2020/4/15</p>
+						<p class="category"><span>学会発表</span></p>
+						<p class="news_title">画像センシングシンポジウム（SSII2023）で発表しました。</p>
+				</a>
+			</li>
+			<li class="item">
+				<a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f210800986c1e4bbbe782902" target="_blank">
+						<p class="date">2020/4/15</p>
+						<p class="category"><span>学会発表</span></p>
+						<p class="news_title">画像センシングシンポジウム（SSII2023）で発表しました。</p>
+				</a>
+			</li>
+			<li class="item">
+				<a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f210800986c1e4bbbe782902" target="_blank">
+						<p class="date">2020/4/15</p>
+						<p class="category"><span>学会発表</span></p>
+						<p class="news_title">画像センシングシンポジウム（SSII2023）で発表しました。</p>
+				</a>
+			</li>
+			<a class="newslist_more" href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">more ></a>
 		</div>
 	</section>
 
-	<section id="access">
-		<h2>Access</h2>
-        
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.1462372494157!2d139.86124221526126!3d35.77178398017339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018857ad443098d%3A0xf79b3de52fef127b!2z5p2x5Lqs55CG56eR5aSn5a2mIOiRm-mjvuOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1689319300360!5m2!1sja!2sjp"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
 
-        <p>〒125-8585 東京都葛飾区新宿 6-3-1 東京理科大学 管理棟4階工学部情報工学科 入江研究室</p>
-	</section>
+	<div class="card-group">
+		<div class="card2">
+			<div class="card-body">
+				<h5 class="card-title text-primary">RESEARCH</h5>
+				<img class="card-img-top" src="images/home7.jpg" alt="Card image cap" style="width:100%;">
+				<p class="card-text">あらゆる実世界の様子を自在に認識・理解可能にする技術を研究します。</p>
+				<a href="./research.html">詳しくはこちら</a>
+			  </div>
+		</div>
+
+		<div class="card2">
+			<div class="card-body">
+				<h5 class="card-title text-primary">PUBLICATIONS</h5>
+				<img class="card-img-top" src="images/publication.jpg" alt="Card image cap" style="width:100%;">
+				<p class="card-text">本研究室のメンバーが、多くの著名な会議・雑誌に論文を出版しています。</p>
+				<a href="./publications.html">詳しくはこちら</a>
+			</div>
+		</div>
+
+		<div class="card2">
+			<div class="card-body">
+				<h5 class="card-title text-primary">ACCESS</h5>
+				<img class="card-img-top" src="images/map.jpg" alt="Card image cap" style="width:100%;">
+				<p class="card-text">東京理科大学 葛飾キャンパス 管理棟4階にあります。</p>
+				<a href="./access.html">詳しくはこちら</a>
+			</div>
+		</div>
+	  </div>
+   
 
 
     <footer class="footer">
+		<!-- ページ上部まで戻るボタン -->
+		<!-- <p id="page-top"><a href="#"></a></p> -->
         <div class="md-flex md-justify-between">
-          <a href="https://jajaaan.co.jp/" class="footer__logo">
+          <div class="footer__logo">
             <img src="images/rikadai.jpg" width="100%" alt="Lo" />
-          </a>
-          <ul class="footer__navi flex">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="#news">NEWS</a></li>
-            <li><a href="#research">RESEARCH</a></li>
-            <li><a href="./member.html">MEMBER</a></li>
-            <li><a href="./event.html">EVENTS</a></li>
-            <li><a href="./contact.html">CONTACTS　</a></li>
-          </ul>
+		  </div>
+		  <nav>
+			<ul class="footer__navi flex" id="page-link">
+				<li><a href="">HOME</a></li>
+				<li><a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">BLOG</a></li>
+				<li><a href="./research.html">RESEARCH</a></li>
+				<li><a href="./member.html">MEMBER</a></li>
+				<li><a href="./publications.html">PUBLICATIONS</a></li>
+				<li><a href="./access.html">ACCESS</a></li>
+			  </ul>
+		  </nav>
+         
         </div>
         <hr />
         <p class="copyright">
             Copyright © 2023 Irie Lab. All Rights Reserved.
         </p>
-      </footer>
-	
+    </footer>
+	<script>
+
+		var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
+		if (windowwidth > 768){
+			var responsiveImage = [//PC用の画像
+				{ src: 'images/home1.jpg'},
+				{ src: 'images/home6.jpg'},
+				//{ src: 'images/home5.jpg'}
+			];
+		} else {
+			var responsiveImage = [//タブレットサイズ（768px）以下用の画像
+				{ src: 'images/home1.jpg' },
+				{ src: 'images/home6.jpg' },
+				//{ src: 'images/home5.jpg' }
+			];
+		}
+
+		//Vegas全体の設定
+
+		$('#slider').vegas({
+				overlay: true,//画像の上に網線やドットのオーバーレイパターン画像を指定。
+				transition: 'fade2',//切り替わりのアニメーション。http://vegas.jaysalvat.com/documentation/transitions/参照。fade、fade2、slideLeft、slideLeft2、slideRight、slideRight2、slideUp、slideUp2、slideDown、slideDown2、zoomIn、zoomIn2、zoomOut、zoomOut2、swirlLeft、swirlLeft2、swirlRight、swirlRight2、burnburn2、blurblur2、flash、flash2が設定可能。
+				transitionDuration: 2000,//切り替わりのアニメーション時間をミリ秒単位で設定
+				delay: 5000,//スライド間の遅延をミリ秒単位で。
+				animationDuration: 20000,//スライドアニメーション時間をミリ秒単位で設定
+				animation: 'random',//スライドアニメーションの種類。http://vegas.jaysalvat.com/documentation/transitions/参照。kenburns、kenburnsUp、kenburnsDown、kenburnsRight、kenburnsLeft、kenburnsUpLeft、kenburnsUpRight、kenburnsDownLeft、kenburnsDownRight、randomが設定可能。
+				slides: responsiveImage,//画像設定を読む
+				//timer:false,// プログレスバーを非表示したい場合はこのコメントアウトを外してください
+			});
+	</script>
+
+
 </div>
+
 </body>
 </html>
