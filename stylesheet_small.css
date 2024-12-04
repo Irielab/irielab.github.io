@@ -18,7 +18,7 @@ body {
 a {
 	text-decoration: none;
 	font-weight: bold;
-	color: #6f7996;
+	color: #4c5c73;
 	font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -32,9 +32,9 @@ ul {
 }
 
 header {
-	height: 70px;
+	
 	background-color: #fff; /* 白 */
-	display: flex;
+	display: block;
 	align-items: center;
 	justify-content: space-between;
 	padding: 4px;
@@ -55,19 +55,15 @@ header {
 	width: 200px;
 }
 
-#page-link {
-	font-size: 1.3vw;
-}
 
 /* タブ (HOME, BLOG, ...) */
-nav ul {
-	display: flex;
+#page-link {
+	font-size: 10px;
+	display: block;
 	align-items: center;
-	
-	padding: 10px;
-	padding-top: 40px;
-	
-	
+	margin-left: 1%;
+	padding: 0px;
+	padding-top: 0px;
 }
 
 nav li {
@@ -75,7 +71,7 @@ nav li {
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 0px;
-	padding-top: 5px;
+	padding-top: 0px;
 }
 
 nav li+ li {
@@ -91,7 +87,7 @@ nav li:first-child {
 
 
 #hero {
-	padding-top: 10px;
+	padding-top: 0px;
 }
 
 .hero-image {
@@ -100,7 +96,7 @@ nav li:first-child {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	
 	object-fit: cover;
 	z-index: 0;
 }
@@ -131,7 +127,7 @@ nav li:first-child {
 
 #slider {
     width: 100%;
-    height: 40vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    height: 20vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
 }
 
 .title-text {
@@ -149,17 +145,31 @@ nav li:first-child {
 
 /* 研究内容:スローガン */
 #research h2 {
-	font-size: 2.5vw;
+	font-size: 15px;
 	font-weight: bold;
 	margin: 5px;
 	margin-top: 80px;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 }
 
 .parallax h3 {
 	font-size: 40px;
 	font-weight: bold;
 }
+
+/* ホーム画面=>動かない背景 */
+.parallax {
+	box-sizing: border-box;
+  	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	background-image: url('images/home7.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+
 
 #research h1 {
 	font-size: 40px;
@@ -177,6 +187,7 @@ nav li:first-child {
 .text-white {
 	color: #ffffff;
 	text-shadow: 1px 2px 3px #808080;
+	padding-top: 20px;
 }
 
 #research h4 {
@@ -227,7 +238,7 @@ nav li:first-child {
 	padding-top: 6px;
 	margin-bottom: 0px;
 	padding-bottom: 6px;
-
+	font-size: 10px;
 	padding-left: 90%;
 	color: #354575;
 }
@@ -254,7 +265,7 @@ nav li:first-child {
 	text-align: center;
 	/*background-color: #6c6c6c;*/
 	background-image: linear-gradient(90deg, rgba(101, 143, 177, 1), rgba(133, 156, 184, 1) 0%, rgba(152, 164, 188, 1) 0%, rgba(157, 166, 189, 1) 0%, rgba(181, 176, 194, 1) 0%, rgba(35, 117, 163, 1) 0%, rgba(53, 68, 128, 1) 0%, rgba(115, 149, 180, 1));color:#ffffff;
-	font-size:18px;
+	font-size:10px;
 	font-weight: bold;
 	padding: 2px;
 	border-radius: 4px 4px 4px 4px;
@@ -275,7 +286,7 @@ nav li:first-child {
 .news-list .item .date{
   margin: 0;
   min-width: 90px;
-  font-size: 15px;
+  font-size: 13px;
   color: #999;
   padding: 0 15px 0 0;
   font-weight: normal;
@@ -300,8 +311,8 @@ nav li:first-child {
 .news-list .item .news_title{
   margin: 0;
   width: 100%;
-  color: #747474; /* グレー */
-  font-size: 13px;
+  color: #373737;
+  font-size: 10px;
 }
 .news-list .item a:hover .news_title{
   color:  #1f1f1f; /* 黒 */;
@@ -320,7 +331,7 @@ height: 0px;
 		min-width: 100px;
 	}
 	.news-list .item .news_title{
-		margin-top: 10px;
+		margin-top: 0px;
 	}
 }
 
@@ -366,16 +377,6 @@ hr {
 	margin-top: 100px;
 }
 
-.footer__logo {
-	display: inline-block;
-	padding-right: 10%;
-	width: 200px;
-}
-
-.footer__navi {
-	justify-content: center;
-}
-
 
   
 .flex {
@@ -386,19 +387,18 @@ hr {
 .footer__logo {
 	display: inline-block;
 	padding-right: 10%;
+	width: 200px;
 }
 
 
-
-
   
 
 
 
   
-@media (min-width: 768px) {
+@media (min-width: 560px) {
 	.md-flex {
-	  display: block;
+	  display: flex;
 	}
   
 	.md-justify-between {
@@ -421,18 +421,6 @@ hr {
 	font-size: 25px;
 }
 
-/* ホーム画面=>動かない背景 */
-.parallax {
-	box-sizing: border-box;
-  	height: 300px;
-	line-height: 300px;
-	text-align: center;
-	background-image: url('images/home7.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-  }
 
 
 /* -----------先頭へ戻る---------- */
@@ -510,8 +498,11 @@ hr {
   .slide-in_inner {
 	display: inline-block;
 	font-size: 1.62vw;
-	margin: 50px;
-	margin-bottom: 160px;
+	margin-top: 50px;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-bottom: 100px;
+	font-size: 15px;
   }
   
   /*左右のアニメーション*/
@@ -780,12 +771,16 @@ hr {
 	text-align: center;
 }
 
+.card-body a {
+	font-size: 11px;
+}
+
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-    height: 200px;
+    height: 90px;
     object-fit: cover;
 }
 
@@ -793,17 +788,18 @@ hr {
     color: #ffffff;
 	background-image: linear-gradient(90deg, rgba(101, 143, 177, 1), rgba(133, 156, 184, 1) 0%, rgba(152, 164, 188, 1) 0%, rgba(157, 166, 189, 1) 0%, rgba(181, 176, 194, 1) 0%, rgba(35, 117, 163, 1) 0%, rgba(53, 68, 128, 1) 0%, rgba(115, 149, 180, 1));color:#ffffff;
 	text-align:center;
-	font-size:18px;
+	font-size:10px;
 	font-weight: bold;
-	margin-top : 1px;
+	margin-top : 0px;
 	margin-bottom : 0px;
-	padding: 2px;
+	padding: 4px;
 }
 
 .card-text {
 	padding-left : 15px;
 	padding-right : 15px;
 	text-align:left;
+	font-size: 10px;
 }
 
 
@@ -812,25 +808,17 @@ hr {
 	margin-right: auto;
 	margin-top: 40px;
 	
-	max-width: 1000px;
+	max-width: 500px;
 	width: 99%;
 	height: auto;
 	
-	display: flex;
+	display: block;
 	flex-direction: row;
 	justify-content: flex-start;
 	flex-wrap: wrap;
   }
   
-  .card-group > :nth-child(2n){
-	margin-left: 20px;
-  }  
 
-
-  .card-group > :not(:nth-child(3n-2)){
-	margin-left: 20px;
-  }  
-  
   
   .card2{
    
@@ -838,14 +826,14 @@ hr {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    transition: box-shadow 0.3s ease-in-out;
-
-	width: calc((100% - 20px * 2) / 3);  
+    transition: box-shadow 0.3s ease-in-out;  
 	
 	height: auto;
 	border-radius: 8px;
 	overflow: hidden;
-	box-shadow: 0 4px 15px rgba(0,0,0,.2)
+	box-shadow: 0 4px 15px rgba(0,0,0,.2);
+
+	margin: 15px;
   }
   
   .card__imgframe{
@@ -869,13 +857,13 @@ hr {
   }
   
   .card__titletext{
-	font-size: 20px;
+	font-size: 10px;
 	font-weight: bold;
 	line-height: 125%;
   }
   
   .card__overviewtext{
-	font-size: 12px;
+	font-size: 10px;
 	line-height: 150%;
   }
 
