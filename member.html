@@ -4,9 +4,13 @@
 	<title>TUS 情報工学科 入江研究室</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" media="(max-width: 800px)" href="stylesheet_small.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 450px)" href="stylesheet_phone.css">
+	<link rel="stylesheet" type="text/css" media="(max-width: 800px) and (min-width: 451px)" href="stylesheet_small.css">
 	<link rel="stylesheet" type="text/css" media="(min-width: 801px)" href="stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+	<!-- メニューバースマホ用 -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
 	<script src="script.js"></script>
@@ -21,16 +25,34 @@
 				<img src="images/logo.jpg" alt="特徴画像">
 			</a>
 		</div>
-		<nav>
+		
+		<!-- メニューバー pc用 -->
+		<nav class="note-pc">
 			<ul id="page-link">
 				<li><a href="./index.html">HOME</a></li>
 				<li><a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">BLOG</a></li>
 				<li><a href="./research.html">RESEARCH</a></li>
-				<li><a href="#page">MEMBER</a></li>
+				<li><a href="">MEMBER</a></li>
 				<li><a href="./publications.html">PUBLICATIONS</a></li>
 				<li><a href="./access.html">ACCESS</a></li>
 			</ul>
 		</nav>
+
+		<!-- メニューバー スマホ用 -->
+		<div class="phone cp_offcm01">
+			<input type="checkbox" id="cp_toggle01">
+			<label for="cp_toggle01"><span></span></label>
+			<div class="cp_menu">
+				<ul>
+					<li><a href="./index.html">HOME</a></li>
+					<li><a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">BLOG</a></li>
+					<li><a href="./research.html">RESEARCH</a></li>
+					<li><a href="">MEMBER</a></li>
+					<li><a href="./publications.html">PUBLICATIONS</a></li>
+					<li><a href="./access.html">ACCESS</a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 
 	<div id="member">
@@ -132,12 +154,12 @@
 			<div class="footer__logo">
 				<img src="images/rikadai.jpg" alt="Lo" />
 			</div>
-		  <nav>
+		  <nav class="note-pc">
           <ul class="footer__navi flex" id="page-link">
             <li><a href="./index.html">HOME</a></li>
             <li><a href="https://instinctive-guavaberry-4b9.notion.site/14f3ce87f21080e0ab34ec856bd25dda?v=14f3ce87f2108173ad6c000c9fc1b589&pvs=4" target="_blank">BLOG</a></li>
             <li><a href="./research.html">RESEARCH</a></li>
-            <li><a href="#page">MEMBER</a></li>
+            <li><a href="">MEMBER</a></li>
             <li><a href="./publications.html">PUBLICATIONS</a></li>
             <li><a href="./access.html">ACCESS</a></li>
           </ul>

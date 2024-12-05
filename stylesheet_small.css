@@ -11,8 +11,8 @@ body {
 	line-height: 1.5;
 	color: #1f1f1f; /* 黒 */
 	background-color: #fff; /* 白 */
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 6%;
+	margin-right: 6%;
 }
 
 a {
@@ -81,6 +81,10 @@ nav li+ li {
 
 nav li:first-child {
 	margin-left: 0;
+}
+
+.phone {
+	display: none;
 }
 
 /* ホーム画像 irie_lab_front.jpg */
@@ -228,7 +232,7 @@ nav li:first-child {
 /* ニュース */
 .news-list{
   list-style: none outside;
-  margin: 10px;
+  margin: 5px;
   padding: 0px;
 }
 
@@ -353,9 +357,9 @@ height: 0px;
 }
 
 iframe {
-	width: 70%;
+	width: 100%;
 	aspect-ratio: 16/9;
-	margin: 10px;
+	margin: 0px;
   }
 
   
