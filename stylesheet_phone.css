@@ -434,7 +434,7 @@ height: 0px;
 
 /* アクセス */
 #access {
-	padding: 30px 0;
+	padding: 10px 0;
 	/*text-align: center;*/
 }
 
@@ -482,8 +482,6 @@ hr {
   
 .footer__logo {
 	display: inline-block;
-	padding-right: 10%;
-	width: 200px;
 }
 
 
@@ -510,7 +508,7 @@ hr {
 
 /* メンバー */
 #member {
-	padding: 40px 0;
+	padding: 10px 0;
 }
 
 #member h2 {
