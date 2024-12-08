@@ -217,6 +217,9 @@ nav li:first-child {
 	color: #313a6f;
 }
 
+.feature a {
+	pointer-events: none;
+}
 
 
 
@@ -228,14 +231,16 @@ nav li:first-child {
 }
 
 .newslist_more {
-	text-align: right;
 	margin-top: 0px;
 	padding-top: 6px;
 	margin-bottom: 0px;
 	padding-bottom: 6px;
-
-	padding-left: 90%;
+	font-size: 12px;
 	color: #354575;
+}
+
+.more {
+	text-align: right;
 }
 
 .news_scroll_area {

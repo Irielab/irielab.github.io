@@ -54,7 +54,7 @@ header {
 }
 
 .logo a {
-	pointer-events: none
+	/*pointer-events: none*/
 }
 
 .logo img {
@@ -81,13 +81,16 @@ header {
 /* menu */
 .cp_offcm01 .cp_menu {
 	position: fixed;
-	right: -100vw;
-	top: 22vw;
+	/*right: -100vw;*/
+	left: -100vw;
+	top: 0vw;
 	width: 250px;
 	height: 100%;
 	cursor: pointer;
 	-webkit-transition: 0.53s transform;
 	        transition: 0.53s transform;
+	/*-webkit-transition-timing-function: cubic-bezier(.38,.52,.23,.99);
+	        transition-timing-function: cubic-bezier(.38,.52,.23,.99);*/
 	-webkit-transition-timing-function: cubic-bezier(.38,.52,.23,.99);
 	        transition-timing-function: cubic-bezier(.38,.52,.23,.99);
 	background-color: #2b5e78;
@@ -115,8 +118,10 @@ header {
 	opacity: 0;
 }
 .cp_offcm01 #cp_toggle01:checked ~ .cp_menu {
-	-webkit-transform: translateX(-100vw);
-	        transform: translateX(-100vw);
+	/*-webkit-transform: translateX(-100vw);
+	        transform: translateX(-100vw);*/
+	-webkit-transform: translateX(100vw);
+	        transform: translateX(100vw);
 }
 /* menu toggle */
 .cp_offcm01 #cp_toggle01 ~ label {
@@ -125,6 +130,8 @@ header {
 	cursor: pointer;
 	-webkit-transition: 0.5s transform;
 	        transition: 0.5s transform;
+	/*-webkit-transition-timing-function: cubic-bezier(.61,-0.38,.37,1.27);
+	        transition-timing-function: cubic-bezier(.61,-0.38,.37,1.27);*/
 	-webkit-transition-timing-function: cubic-bezier(.61,-0.38,.37,1.27);
 	        transition-timing-function: cubic-bezier(.61,-0.38,.37,1.27);
 	text-align: center;
@@ -158,7 +165,8 @@ header {
 .fa-bars {
 	font-size: 33px;
 	padding-top: 10px;
-	margin-top: 0px;
+	margin-top: 0vw;
+	margin-left: 7.5vw;
 }
 
 
@@ -304,6 +312,10 @@ header {
 	color: #313a6f;
 }
 
+.feature a {
+	pointer-events: none;
+}
+
 
 
 
@@ -315,14 +327,16 @@ header {
 }
 
 .newslist_more {
-	text-align: right;
 	margin-top: 0px;
 	padding-top: 6px;
 	margin-bottom: 0px;
 	padding-bottom: 6px;
-	font-size: 15px;
-	padding-left: 90%;
+	font-size: 12px;
 	color: #354575;
+}
+
+.more {
+	text-align: right;
 }
 
 .news_scroll_area {
