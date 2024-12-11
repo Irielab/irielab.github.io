@@ -346,7 +346,7 @@ height: 0px;
 
 /* アクセス */
 #access {
-	padding: 30px 0;
+	padding: 10px 0;
 	/*text-align: center;*/
 }
 
@@ -422,13 +422,35 @@ hr {
 
 /* メンバー */
 #member {
-	padding: 40px 0;
+	padding: 10px 0;
 }
 
 #member h2 {
 	font-size: 25px;
 }
 
+#member a {
+	font-weight: normal;
+	color: #1d456d;
+}
+
+#member a:hover {
+	color: #677992; /* 黒 */
+}
+
+#member a:after {
+	height: 0px;
+}
+
+#member h4 {
+	background-image: linear-gradient(90deg, rgba(101, 143, 177, 1), rgba(133, 156, 184, 1) 0%, rgba(152, 164, 188, 1) 0%, rgba(157, 166, 189, 1) 0%, rgba(181, 176, 194, 1) 0%, rgba(35, 117, 163, 1) 0%, rgba(53, 68, 128, 1) 0%, rgba(115, 149, 180, 1));color:#ffffff;
+}
+
+.hero-description h2 {
+	background-image: linear-gradient(90deg, rgba(101, 143, 177, 1), rgba(133, 156, 184, 1) 0%, rgba(152, 164, 188, 1) 0%, rgba(157, 166, 189, 1) 0%, rgba(181, 176, 194, 1) 0%, rgba(35, 117, 163, 1) 0%, rgba(53, 68, 128, 1) 0%, rgba(115, 149, 180, 1));color:#ffffff;
+	padding-left: 15px;
+	font-size: 20px;
+}
 
 
 /* -----------先頭へ戻る---------- */
@@ -876,14 +898,3 @@ hr {
   }
 
 
-    /* ------------- メンバー ------------- */
-
-#member h4 {
-	background-image: linear-gradient(90deg, rgba(101, 143, 177, 1), rgba(133, 156, 184, 1) 0%, rgba(152, 164, 188, 1) 0%, rgba(157, 166, 189, 1) 0%, rgba(181, 176, 194, 1) 0%, rgba(35, 117, 163, 1) 0%, rgba(53, 68, 128, 1) 0%, rgba(115, 149, 180, 1));color:#ffffff;
-}
-
-.hero-description h2 {
-	background-image: linear-gradient(90deg, rgba(101, 143, 177, 1), rgba(133, 156, 184, 1) 0%, rgba(152, 164, 188, 1) 0%, rgba(157, 166, 189, 1) 0%, rgba(181, 176, 194, 1) 0%, rgba(35, 117, 163, 1) 0%, rgba(53, 68, 128, 1) 0%, rgba(115, 149, 180, 1));color:#ffffff;
-	padding-left: 15px;
-	font-size: 20px;
-}
