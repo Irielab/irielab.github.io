@@ -3,17 +3,17 @@
 ## ファイル構成
 ``` 
 irielab.github.io/
-│── images/                #
-│   ├── images.png         #
-│── README.md              #
-│── access.html            #
-│── contact.html           #
-│── index.html             #
-│── member.html            #
-│── publications.html      #
-│── research.html          #
-│── script.js              #
-│── stylesheet.css         #
-│── stylesheet_phone.css   #
-│── stylesheet_small.css   #
+│── images/                # Webページ用画像
+│   ├── images.png
+│── README.md
+│── access.html            # アクセス
+│── contact.html           # 問い合わせ
+│── index.html             # トップページ
+│── member.html            # メンバー
+│── publications.html      # 校外発表
+│── research.html          # 研究内容
+│── script.js              # javascript用
+│── stylesheet.css         # CSSファイル（PC版）
+│── stylesheet_phone.css   # CSSファイル（iphone版）
+│── stylesheet_small.css   # CSSファイル（縮小版）
 ```
